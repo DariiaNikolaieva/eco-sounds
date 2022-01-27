@@ -4,30 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles.css" />
     <title>Eco Sounds</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <nav class="menu">
-            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <div class="header-content">
+          <nav class="menu">
+            <input
+              type="checkbox"
+              href="#"
+              class="menu-open"
+              name="menu-open"
+              id="menu-open"
+            />
             <label class="menu-open-button" for="menu-open">
-             <span class="lines line-1"></span>
-             <span class="lines line-2"></span>
-             <span class="lines line-3"></span>
-           </label>
-         
-            <button class="menu-item blue"> <i class="fa fa-anchor"></i> </button>
-            <button class="menu-item green"> <i class="fa fa-coffee"></i> </button>
-            <button class="menu-item red"> <i class="fa fa-heart"></i> </button>
-            <button class="menu-item purple"> <i class="fa fa-microphone"></i> </button>
-         </nav>
-         <div class="sound-list-container"></div>
+              <span class="lines line-1"></span>
+              <span class="lines line-2"></span>
+              <span class="lines line-3"></span>
+            </label>
+            <div class="sound-btn-container">
+              <button class="menu-item winter-btn" data-sound="winter"></button>
+              <button class="menu-item spring-btn" data-sound="spring"></button>
+              <button class="menu-item summer-btn" data-sound="summer"></button>
+              <button class="menu-item autumn-btn" data-sound="autumn"></button>
+            </div>
+          </nav>
+          <div class="sound-list-container">
+          </div>
+        </div>
       </div>
     </header>
     <main></main>
     <footer></footer>
-    <script></script>
+    <script src="/js/listOfSounds.js"></script>
   </body>
 </html>
