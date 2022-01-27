@@ -2,20 +2,19 @@ const soundsBtnList = document.querySelector('.sound-btn-container');
 const soundBtnActive = document.querySelectorAll('.menu-item');
 const soundBtn = document.querySelector('.menu-item');
 const soundListContainer = document.querySelector('.sound-list-container')
-let soundList
+let soundList;
 
-const winterItems = [`<li class='winter-item'>winter1</li><li class='winter-item'>winter2</li><li class='winter-item'>winter3</li>`];
-const springItems = [`<li class='spring-item'>spring1</li><li class='spring-item'>spring2</li><li class='spring-item'>spring3</li>`];
-const summerItems = [`<li class='summer-item'>summer1</li><li class='summer-item'>summer2</li><li class='summer-item'>summer3</li>`];
-const autumnItems = [`<li class='autumn-item'>autumn1</li><li class='autumn-item'>autumn2</li><li class='autumn-item'>autumn3</li>`];
+const winterItems = [`<li class='winter-item'><button class='sound-item'>winter1</button></li>`];
+const springItems = [`<li class='spring-item'><button class='sound-item'>spring1</button></li>`];
+const summerItems = [`<li class='summer-item'><button class='sound-item'>summer1</button></li>`];
+const autumnItems = [`<li class='autumn-item'><button class='sound-item'>autumn1</button></li>`];
 
 const changeSoundList = function (event) {
     if(soundList) {
         soundListContainer.removeChild(soundList);
     }
     soundList = document.createElement('ul');
-    soundList.classList.add(`${event.target.dataset.sound}-list`);
-    console.log(event.target.dataset.sound)
+    soundList.classList.add('sound-list');
     if (event.target.dataset.sound === 'winter') {
         soundList.innerHTML = winterItems;
     } else if (event.target.dataset.sound === 'spring') {
@@ -26,6 +25,11 @@ const changeSoundList = function (event) {
         soundList.innerHTML = autumnItems;
     }
     soundListContainer.appendChild(soundList);
+    
+    const changeImgBtn = document.querySelector(".sound-item");
+    const image = document.querySelector(".image");
+    
+    changeImgBtn.addEventListener("click", changeImage);
 }
 
 soundsBtnList.addEventListener('click', changeSoundList);
