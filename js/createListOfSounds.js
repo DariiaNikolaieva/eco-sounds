@@ -4,10 +4,10 @@ const soundBtn = document.querySelector('.menu-item');
 const soundListContainer = document.querySelector('.sound-list-container')
 let soundList;
 
-const winterItems = [`<li class='winter-item'><button class='sound-item'>winter1</button></li>`];
-const springItems = [`<li class='spring-item'><button class='sound-item'>spring1</button></li>`];
-const summerItems = [`<li class='summer-item'><button class='sound-item'>summer1</button></li>`];
-const autumnItems = [`<li class='autumn-item'><button class='sound-item'>autumn1</button></li>`];
+const winterItems = [`<li class='winter-item'><button class='sound-item' data-image='winter1'>winter1</button></li><li class='winter-item'><button class='sound-item' data-image='winter2'>winter2</button></li><li class='winter-item'><button class='sound-item' data-image='winter3'>winter3</button></li>`];
+const springItems = [`<li class='spring-item'><button class='sound-item' data-image='spring1'>spring1</button></li>`];
+const summerItems = [`<li class='summer-item'><button class='sound-item' data-image='summer1'>summer1</button></li>`];
+const autumnItems = [`<li class='autumn-item'><button class='sound-item' data-image='autumn1'>autumn1</button></li>`];
 
 const changeSoundList = function (event) {
     if(soundList) {
@@ -25,11 +25,6 @@ const changeSoundList = function (event) {
         soundList.innerHTML = autumnItems;
     }
     soundListContainer.appendChild(soundList);
-    
-    const changeImgBtn = document.querySelector(".sound-item");
-    const image = document.querySelector(".image");
-    
-    changeImgBtn.addEventListener("click", changeImage);
 }
 
 soundsBtnList.addEventListener('click', changeSoundList);
