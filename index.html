@@ -14,7 +14,6 @@
           <nav class="menu">
             <input
               type="checkbox"
-              href="#"
               class="menu-open"
               name="menu-open"
               id="menu-open"
@@ -31,28 +30,45 @@
               <button class="menu-item autumn-btn" data-sound="autumn"></button>
             </div>
           </nav>
-          <div class="sound-list-container">
-          </div>
+          <div class="sound-list-container"></div>
         </div>
       </div>
     </header>
     <main class="main">
-        <img src="/assets/images/winter1.jpg" alt="nature view" class="image">
+      <img src="/assets/images/winter1.jpg" alt="nature view" class="image" />
     </main>
     <footer>
       <div class="container">
         <div class="footer-container">
           <div class="developer_data">
             <p class="footer_year"><span>©</span>2022</p>
-            <a href="https://github.com/DariiaNikolaieva" target="_blank">github</a>
+            <a href="https://github.com/DariiaNikolaieva" target="_blank"
+              >github</a
+            >
+          </div>
+          <a class="rs_link" href="https://rs.school/js-stage0/" target="_blank"
+            >Rolling Scopes School</a
+          >
+          <div class="audio-player">
+            <div class="controls">
+              <div class="play-container">
+                <div class="toggle-play play"></div>
+              </div>
+              <div class="timeline">
+                <div class="progress"></div>
+              </div>
+              <div class="volume-container">
+                <div class="volume-button">
+                  <div class="volume icono-volumeMedium"></div>
+                </div>
+
+                <div class="volume-slider">
+                  <div class="volume-percentage"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <a class="rs_link" href="https://rs.school/js-stage0/" target="_blank">Rolling Scopes School</a>
-        <div class="maine">
-          <audio controls class="iru-tiny-player" data-title="80s Vibe">
-            <source src="http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a" type="audio/m4a">
-          </audio>
-        </div>  
-      </div>
       </div>
     </footer>
     <script src="/js/createListOfSounds.js"></script>
