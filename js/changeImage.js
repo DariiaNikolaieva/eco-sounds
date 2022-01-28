@@ -5,3 +5,5 @@ document.addEventListener("click", function(event) {
         image.src = `/assets/images/${event.target.dataset.image}.jpg`
     }
 });
+
+document.addEventListener('click', e => console.log(e.target))

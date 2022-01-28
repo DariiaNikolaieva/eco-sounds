@@ -195,48 +195,73 @@ a {
     transform: translate3d(-0.25084px, -104.9997px, 0);
  } */
 
+ /* .icon {
+  background-repeat: no-repeat;
+  background-position: center;
+ } */
+
 .winter-btn {
-  background-color: #669ae1;
+  background-color: #9EC3D4;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background-image: url('/assets/svg/winter.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .winter-btn:hover {
-  color: #669ae1;
   text-shadow: none;
+  background-image: url('/assets/svg/winter1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .spring-btn {
-  background-color: #70cc72;
+  background-color: #A0D58E;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background-image: url('/assets/svg/spring.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .spring-btn:hover {
-  color: #70cc72;
   text-shadow: none;
+  background-image: url('/assets/svg/spring1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .summer-btn {
-  background-color: #fe4365;
+  background-color: #FCE09C;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background-image: url('/assets/svg/summer.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .summer-btn:hover {
-  color: #fe4365;
   text-shadow: none;
+  background-image: url('/assets/svg/summer1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .autumn-btn {
-  background-color: #c49cde;
+  background-color: #FF936B;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background-image: url('/assets/svg/autumn.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .autumn-btn:hover {
-  color: #c49cde;
   text-shadow: none;
+  background-image: url('/assets/svg/autumn1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header {

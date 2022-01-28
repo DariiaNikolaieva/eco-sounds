@@ -1,18 +1,17 @@
 const audioPlayer = document.querySelector(".audio-player");
-const audio = new Audio(
-  "https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3"
-);
 
-audio.addEventListener(
-  "loadeddata",
-  () => {
-    // audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(
-    //   audio.duration
-    // );
-    audio.volume = .75;
-  },
-  false
-);
+let audio = document.querySelector(".audio");
+audio.src = '/assets/sounds/winter1.mp3'
+
+document.addEventListener("click", function(event) { 
+    if(event.target.classList.contains('sound-item')) {
+        console.log(event.target.dataset.image)
+        audio.src = `/assets/sounds/${event.target.dataset.image}.mp3`
+        audio.play();
+        playBtn.classList.remove("play");
+        playBtn.classList.add("pause");
+    }
+});
 
 //click on timeline to skip around
 const timeline = audioPlayer.querySelector(".timeline");
