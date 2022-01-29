@@ -5,6 +5,7 @@ audio.src = '/assets/sounds/winter1.mp3'
 
 document.addEventListener("click", function(event) { 
     if(event.target.classList.contains('sound-item')) {
+        console.log(event.target.dataset.image)
         audio.src = `/assets/sounds/${event.target.dataset.image}.mp3`
         audio.play();
         playBtn.classList.remove("play");

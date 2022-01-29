@@ -3,6 +3,7 @@ const soundBtnActive = document.querySelectorAll('.menu-item');
 const soundBtn = document.querySelector('.menu-item');
 const soundListContainer = document.querySelector('.sound-list-container');
 const text = document.querySelector('.img-text');
+const audioPlayerContainer = document.querySelector('.audio-player');
 let soundList;
 
 const winterItems = [`<li class='winter-item'><button class='sound-item active-sound-btn' data-image='winter1'>Snow steps</button></li><li class='winter-item'><button class='sound-item' data-image='winter2'>Fireplace roar</button></li><li class='winter-item'><button class='sound-item' data-image='winter3'>Penguin scream</button></li>`];
@@ -17,7 +18,7 @@ const changeSoundList = function (event) {
     text.remove();
     soundList = document.createElement('ul');
     soundList.classList.add('sound-list');
-    
+    audioPlayerContainer.classList.remove('hidden');
     if (event.target.dataset.sound === 'winter') {
         soundList.innerHTML = winterItems;
         image.src = '/assets/images/winter1.jpg';
