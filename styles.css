@@ -207,14 +207,14 @@ a {
   background-color: #9ec3d4;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-  background-image: url("/assets/svg/winter.svg");
+  background-image: url("./assets/svg/winter.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .winter-btn:hover {
   text-shadow: none;
-  background-image: url("/assets/svg/winter1.svg");
+  background-image: url("./assets/svg/winter1.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -223,7 +223,7 @@ a {
   background-color: #a0d58e;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-  background-image: url("/assets/svg/spring.svg");
+  background-image: url("./assets/svg/spring.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -239,14 +239,14 @@ a {
   background-color: #fce09c;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-  background-image: url("/assets/svg/summer.svg");
+  background-image: url("./assets/svg/summer.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .summer-btn:hover {
   text-shadow: none;
-  background-image: url("/assets/svg/summer1.svg");
+  background-image: url("./assets/svg/summer1.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -255,14 +255,14 @@ a {
   background-color: #ff936b;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-  background-image: url("/assets/svg/autumn.svg");
+  background-image: url("./assets/svg/autumn.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .autumn-btn:hover {
   text-shadow: none;
-  background-image: url("/assets/svg/autumn1.svg");
+  background-image: url("./assets/svg/autumn1.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -423,7 +423,7 @@ display: none;
 .icono-volumeMedium {
   width: 20px;
   height: 20px;
-  background-image: url("/assets/svg/volume.svg");
+  background-image: url("./assets/svg/volume.svg");
   filter: brightness(0) saturate(100%) invert(98%) sepia(99%) saturate(9%)
     hue-rotate(11deg) brightness(107%) contrast(100%);
 }
@@ -431,7 +431,7 @@ display: none;
 .icono-volumeMute {
   width: 20px;
   height: 20px;
-  background-image: url("/assets/svg/mute.svg");
+  background-image: url("./assets/svg/mute.svg");
   filter: brightness(0) saturate(100%) invert(98%) sepia(99%) saturate(9%)
     hue-rotate(11deg) brightness(107%) contrast(100%);
 }

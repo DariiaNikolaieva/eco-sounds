@@ -42,8 +42,8 @@ const changeSoundList = function (event) {
         playBtn.classList.add("pause");
     } else if (event.target.dataset.sound === 'autumn') {
         soundList.innerHTML = autumnItems;
-        image.src = '/assets/images/autumn1.jpg';
-        audio.src = '/assets/sounds/autumn1.mp3';
+        image.src = './assets/images/autumn1.jpg';
+        audio.src = './assets/sounds/autumn1.mp3';
         audio.play();
         playBtn.classList.remove("play");
         playBtn.classList.add("pause");
