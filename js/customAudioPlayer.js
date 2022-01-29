@@ -1,11 +1,11 @@
 const audioPlayer = document.querySelector(".audio-player");
 
 let audio = document.querySelector(".audio");
-audio.src = '/assets/sounds/winter1.mp3'
+audio.src = './assets/sounds/winter1.mp3'
 
 document.addEventListener("click", function(event) { 
     if(event.target.classList.contains('sound-item')) {
-        audio.src = `/assets/sounds/${event.target.dataset.image}.mp3`
+        audio.src = `./assets/sounds/${event.target.dataset.image}.mp3`
         audio.play();
         playBtn.classList.remove("play");
         playBtn.classList.add("pause");

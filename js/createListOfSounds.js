@@ -21,22 +21,22 @@ const changeSoundList = function (event) {
     audioPlayerContainer.classList.remove('hidden');
     if (event.target.dataset.sound === 'winter') {
         soundList.innerHTML = winterItems;
-        image.src = '/assets/images/winter1.jpg';
-        audio.src = '/assets/sounds/winter1.mp3';
+        image.src = './assets/images/winter1.jpg';
+        audio.src = './assets/sounds/winter1.mp3';
         audio.play();
         playBtn.classList.remove("play");
         playBtn.classList.add("pause");  
     } else if (event.target.dataset.sound === 'spring') {
         soundList.innerHTML = springItems;
-        image.src = '/assets/images/spring1.jpg';
-        audio.src = '/assets/sounds/spring1.mp3';
+        image.src = './assets/images/spring1.jpg';
+        audio.src = './assets/sounds/spring1.mp3';
         audio.play();
         playBtn.classList.remove("play");
         playBtn.classList.add("pause");
     } else if (event.target.dataset.sound === 'summer') {
         soundList.innerHTML = summerItems;
-        image.src = '/assets/images/summer1.jpg';
-        audio.src = '/assets/sounds/summer1.mp3';
+        image.src = './assets/images/summer1.jpg';
+        audio.src = './assets/sounds/summer1.mp3';
         audio.play();
         playBtn.classList.remove("play");
         playBtn.classList.add("pause");
