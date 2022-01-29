@@ -6,6 +6,7 @@ body {
   text-align: center;
   font-family: "Lato", sans-serif;
   box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 button {
@@ -41,8 +42,8 @@ a {
 .menu-open-button {
   background: #eeeeee;
   border-radius: 100%;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   position: absolute;
   color: #ffffff;
   text-align: center;
@@ -195,71 +196,71 @@ a {
     transform: translate3d(-0.25084px, -104.9997px, 0);
  } */
 
- /* .icon {
+/* .icon {
   background-repeat: no-repeat;
   background-position: center;
  } */
 
 .winter-btn {
-  background-color: #9EC3D4;
+  background-color: #9ec3d4;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-  background-image: url('/assets/svg/winter.svg');
+  background-image: url("/assets/svg/winter.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .winter-btn:hover {
   text-shadow: none;
-  background-image: url('/assets/svg/winter1.svg');
+  background-image: url("/assets/svg/winter1.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .spring-btn {
-  background-color: #A0D58E;
+  background-color: #a0d58e;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-  background-image: url('/assets/svg/spring.svg');
+  background-image: url("/assets/svg/spring.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .spring-btn:hover {
   text-shadow: none;
-  background-image: url('/assets/svg/spring1.svg');
+  background-image: url("/assets/svg/spring1.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .summer-btn {
-  background-color: #FCE09C;
+  background-color: #fce09c;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-  background-image: url('/assets/svg/summer.svg');
+  background-image: url("/assets/svg/summer.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .summer-btn:hover {
   text-shadow: none;
-  background-image: url('/assets/svg/summer1.svg');
+  background-image: url("/assets/svg/summer1.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .autumn-btn {
-  background-color: #FF936B;
+  background-color: #ff936b;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-  background-image: url('/assets/svg/autumn.svg');
+  background-image: url("/assets/svg/autumn.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .autumn-btn:hover {
   text-shadow: none;
-  background-image: url('/assets/svg/autumn1.svg');
+  background-image: url("/assets/svg/autumn1.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -270,11 +271,21 @@ a {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 main {
+  position: relative;
   /* height: 900px; */
   height: calc(100vh - 141px - 130px);
+  background: linear-gradient(
+    90deg,
+    rgba(158, 195, 212, 1) 0%,
+    rgba(160, 213, 142, 1) 34%,
+    rgba(252, 224, 156, 1) 67%,
+    rgba(255, 147, 107, 1) 100%
+  );
 }
 
 img {
@@ -438,4 +449,58 @@ img {
 .volume-container:focus .volume-slider {
   left: -50px;
   width: 100px;
+}
+
+p {
+  margin: 0;
+}
+
+.img-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: calc(30px + (60 - 30) * ((100vw - 320px) / (1440 - 320)));
+  line-height: 2;
+  color: #f2f2f2;
+  /* background: linear-gradient(90deg, rgba(158,195,212,0.4) 0%, rgba(160,213,142,0.4) 34%, rgba(252,224,156,0.4) 67%, rgba(255,147,107,0.4) 100%); */
+  font-weight: bold;
+}
+
+.sound-list-container {
+  display: flex;
+  align-items: center;
+}
+
+.sound-list {
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
+}
+
+.sound-item {
+  border-radius: 4px;
+  padding: 10px;
+  width: 180px;
+  font-family: inherit;
+  font-size: 20px;
+  border: 0;
+  background-color: transparent;
+  color: #f2f2f2;
+}
+
+.menu-item.active-menu-btn {
+  width: 70px;
+  height: 70px;
+  box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.5);
+}
+
+.sound-item:hover {
+  box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.5);
+}
+
+.active-sound-btn {
+  background-color: #f2f2f2;
+  color: #596778;
 }
