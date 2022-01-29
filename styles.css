@@ -31,6 +31,7 @@ a {
   justify-content: space-between;
 }
 .menu {
+  position: relative;
   width: 80px;
   height: 80px;
   text-align: center;
@@ -45,6 +46,7 @@ a {
   width: 60px;
   height: 60px;
   position: absolute;
+  left: 0;
   color: #ffffff;
   text-align: center;
   line-height: 80px;
@@ -297,6 +299,20 @@ img {
 .footer-container {
   display: flex;
   justify-content: space-between;
+  font-family: inherit;
+  font-size: 20px;
+}
+
+.developer_data {
+  display: flex;
+}
+
+.footer_year {
+  margin-right: 20px;
+}
+
+.rs_link {
+  margin-left: 20px;
 }
 
 .audio-player {
@@ -503,4 +519,5 @@ p {
 .active-sound-btn {
   background-color: #f2f2f2;
   color: #596778;
+  box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.5);
 }
