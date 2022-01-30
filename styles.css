@@ -39,6 +39,7 @@ a:hover {
 @media (max-width: 1200px) {
   .header-content {
     flex-direction: column;
+    gap: 10px;
   }
   .sound-list-container {
     align-self: center;
@@ -549,6 +550,7 @@ p {
 @media (max-width: 768px) {
   .sound-list {
     flex-direction: column;
+    gap: 10px;
     width: calc(200px + (700 - 200) * ((100vw - 320px) / (1440 - 320)));
   }
 }
